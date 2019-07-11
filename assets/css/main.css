@@ -2117,6 +2117,37 @@ input, select, textarea {
 				padding: 0;
 			}
 
+/* Collapsible Buttons/Accordion (with much help from w3schools.com)*/
+ /* Style the button that is used to open and close the collapsible content */
+.accordion {
+  text-align: center;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+	background: rgba(188, 202, 206, 0.15);
+	border-color: inherit;
+}
+/* Add + or - depending on if it's expanded or not */
+.accordion:after {
+  content: '\002B';
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 /* Table */
 
 	table {
